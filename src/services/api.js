@@ -1,17 +1,16 @@
 import axios from "axios";
 
-const API_URL =
-  "https://api.cricapi.com/v1/series_points?apikey=f5e5da5a-3d89-4d7a-bcaa-636d9d6c836a&id=d5a498c8-7596-4b93-8ab0-e0efc3345312";
+const API_URL = "https://cricket-live-line1.p.rapidapi.com";
 const HEADERS = {
-  "x-rapidapi-key": "f5e5da5a-3d89-4d7a-bcaa-636d9d6c836a",
-  // "x-rapidapi-host": "cricket-live-line1.p.rapidapi.com",
+  "x-rapidapi-key": "60af64af2bmsh2265032cba6c184p1e9ac3jsnca5a6bee2c22",
+  "x-rapidapi-host": "cricket-live-line1.p.rapidapi.com",
 };
 
 // 🟠 Function to fetch Points Table
 export const getPointsTable = async () => {
   const options = {
     method: "GET",
-    url: "https://api.cricapi.com/v1/series_points",
+    url: "https://cricket-live-line1.p.rapidapi.com/series/336/pointsTable",
     headers: HEADERS,
   };
 
